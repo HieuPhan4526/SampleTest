@@ -1,0 +1,501 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a:hover{
+    text-decoration: none;
+}
+p{
+    color: darkgray;
+    font-size: 16px;
+}
+button{
+    padding: 10px 20px;
+    color: white;
+    background-color: #CD853F;
+    border: none
+}
+section{
+    padding: 100px;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+.title{
+    position: relative;
+    padding-bottom: 20px;
+}
+.title::after{
+    content: "";
+    height: 2px;
+    width: 9%;
+    border: 1px solid #CD853F;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.bodyIcon{
+    font-size: 20px;
+    padding: 12px;
+    border: 1px solid #CD853F;
+    border-radius: 50%;
+    color: #CD853F;
+    cursor: pointer;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header */
+header{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+.navbar-brand{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+.navbar-brand:hover{
+   color: white;
+}
+.navbar-brand span{
+    color: #CD853F;
+    font-weight:200;
+}
+#navbarSupportedContent .active{
+    color: #CD853F;
+}
+.navbar-nav{
+    list-style: none;
+}
+.navbar-nav li a{
+    color: white;
+    transition: all 0.5s;
+}
+.navbar-nav li a:hover{
+    color: #CD853F;
+}
+/* carousel */
+.carousel{
+    background-image: url(../img/carousel-imge.jpeg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.carousel-content{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    width: 85%;
+    justify-content: space-between;
+    color: white;
+}
+.carousel-text{
+    width: 50%;
+}
+.carousel-title{
+    position: relative;
+    padding-bottom: 10px;
+}
+.carousel-title a{
+    color: white;
+    font-weight: bold;
+}
+.carousel-title a h1{
+   font-size: 50px;
+}
+.carousel-title a h1 span{
+    color: #CD853F;
+    font-weight: 300;
+}
+.carousel-title p{
+    font-size: 30px;
+    color: white;
+}
+.carousel-title::before{
+    content: "";
+    height: 2px;
+    width: 9%;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 0;
+    margin: 10px 0;
+}
+.carousel-description{
+    font-size: 20px;
+    color: darkgray;
+    padding: 20px 0;
+}
+.button-carousel{
+    padding: 10px 20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    transition: all 0.5s;
+}
+.button-carousel:hover{
+    background-color: white;
+    color: black;
+}
+
+.carousel-form{
+    background-color: white;
+    color: black;
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.carousel-form form{
+    padding: 20px 30px;
+}
+.form-title{
+    text-align: center;
+    background-color: #F5F5F5;
+    padding: 15px;
+}
+.form-title span{
+    color: #CD853F;
+}
+.carousel-form form input{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    margin: 40px 0;
+    display: block;
+}
+.carousel-form form input::placeholder{
+    color: lightgray;
+}
+.carousel-form form input:focus{
+    outline: none;
+}
+.carousel-form button {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border: none;
+    background-color: #FFB90F;
+    color: white;
+    font-size: 20px;
+}
+/* Features */
+.Features{
+    background-color: #F5F5F5;
+}
+.Features-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.tabs{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tablinks {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 40px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight:600;
+    transition: 0.2s ease;
+    color: white;
+    background-color: #4F4F4F;
+}
+.tablinks:hover{
+    background-color: #FFB90F;
+    color:#fff;
+}
+.tablinks.active {
+    background-color: #CD853F;
+    color:#fff;
+}
+.tabcontent {
+    display: none;
+}
+.tabcontent.active {
+    display: block;
+}
+.wrapper_tabcontent{
+    width: 50%;
+}
+.Features-img{
+    height: 298px;
+    width: 27%;
+    overflow: hidden;
+}
+.Features-img img{
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+}
+.tabcontent-description{
+    margin: 35px 0;
+}
+
+/* SubList */
+.Sublist-content{
+    display: flex;
+    gap: 100px;
+}
+.Sublist-imge{
+    flex: 1;
+}
+.Sublist-imge img{
+    width: 100%;
+    box-shadow: 5px 10px 18px #888888;
+}
+.Sublist-text{
+    flex:2;
+    margin-left: 50px;
+}
+.SubItem{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+/* Standard */
+.Standard{
+    background-color: #F5F5F5;
+}
+.Standard-content{
+    display: flex;
+    gap: 100px;
+}
+.Standard-imge{
+    flex: 1;
+}
+.Standard-imge img{
+    width: 100%;
+    box-shadow: 5px 10px 18px #888888;
+}
+.Standard-text{
+    flex:2;
+    margin-right: 50px;
+}
+/* Reviews */
+.Reviews{
+    text-align: center;
+}
+.Reviews-title .title::after{
+    left: 45%;
+}
+.Reviews-content{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.ReviewsItem-title{
+    margin : 40px 0
+}
+/* Stylish */
+.Stylish{
+    text-align: center;
+    padding: 0;
+    background-image: url(../img/imge5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    height: 80vh;
+}
+.Stylist-content p {
+    margin: 20px 0;
+}
+.Stylist-content .title{
+    color: white;
+}
+.Stylist-content .title::after{
+    border: 1px solid white;
+    left: 45%;
+}
+/* Contact */
+.Contact{
+    text-align: center;
+}
+.Contact-title .title::after{
+    left: 47%;
+    width: 5%;
+}
+.Contact-form{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+}
+.formLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+.formLeft input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid darkgray;
+}
+.formLeft input::placeholder{
+    color: darkgray;
+}
+.formLeft input:focus{
+    outline:none
+}
+.formRight textarea{
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid darkgray;
+}
+.formRight textarea::placeholder{
+  color: darkgray;
+}
+.formRight textarea:focus{
+    outline: none;
+}
+/* footer */
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+.footer-icon{
+    display: flex;
+    gap: 20px;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    section{
+        padding: 50px;
+    }
+    /* Header */
+    .navbar-toggler-icon{
+        color: white;
+    }
+    #navbarSupportedContent{
+        background-color: white;
+    }
+    #navbarSupportedContent ul{
+        padding: 10px 40px;
+    }
+    #navbarSupportedContent ul li a{
+        color: black;
+    }
+    #navbarSupportedContent ul li a:hover{
+        color:#CD853F
+    }
+    /* Carousel */
+    .carousel-title a h1 {
+        font-size: 40px;
+    }
+    .carousel-title p{
+        font-size: 25px;
+    }
+    /* Features */
+    .Features-content{
+        flex-wrap: wrap;
+    }
+    .tabs{
+        justify-content: flex-start;
+    }
+    .wrapper_tabcontent{
+        width: 100%;
+    }
+    .Features-img{
+        width: 100%;
+    }
+    /* SubList */
+    .Sublist-content{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .Sublist-imge{
+        flex: none;
+        width: 85%;
+    }
+    .Sublist-text{
+        margin: 0;
+    }
+    /* Standard */
+
+    .Standard-content{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .Standard-imge{
+        flex: none;
+        width: 85%;
+    }
+    .Standard-text{
+        margin: 0;
+    }
+    /* Contact */
+    .Contact-form{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+@media only screen and (max-width:650px) {
+    /* Carousel */
+    .carousel-content{
+        gap: 0;
+    }
+    .carousel-title a h1{
+        font-size: 30px;
+    }
+    .carousel-title p{
+        font-size: 15px;
+    }
+    .carousel-description{
+        font-size: 10px;;
+    }
+    .button-carousel{
+        font-size: 10px;
+    }
+    .form-title{
+        font-size: 14px;
+        padding: 7px;
+    }
+    .carousel-form form input{
+        margin: 0;
+        font-size: 10px;
+    }
+    .carousel-form form input::placeholder{
+        font-size: 10px;
+    }
+    .carousel-form button{
+        padding: 7px;
+        font-size: 15px;
+    }
+    /* Reviews */
+    .Reviews-content{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    
+}
