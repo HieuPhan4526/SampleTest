@@ -497,5 +497,12 @@ footer{
         grid-template-columns: repeat(1, 1fr);
 
     }
+    /* contact */
+    .formLeft{
+        width: 80%;
+    }
+    .formRight textarea{
+        width: 80%;
+    }
     
 }
